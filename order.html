@@ -31,9 +31,98 @@
       <div class="container">
         <h1 class="tagline">Pre-Order Your Favourites</h1>
         <p>
-          Our online pre-order form is coming soon. Check back tomorrow to
-          reserve your fresh bread and pastries for pickup.
+          Fill in the form below to reserve your fresh bread and pastries for pickup.
         </p>
+
+        <form action="#" method="get" id="preorder-form">
+          <fieldset>
+            <legend>Who is picking up</legend>
+            <div class="field-group">
+              <label for="customer-name">Your name</label>
+              <input type="text" id="customer-name" name="customer-name" class="field" required placeholder="Sarah Example">
+            </div>
+            <div class="field-group">
+              <label for="customer-email">Email address</label>
+              <input type="email" id="customer-email" name="customer-email" class="field" required placeholder="sarah@example.com">
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Pickup day</legend>
+            <div class="choice-group">
+              <div class="choice">
+                <input type="radio" id="day-saturday" name="pickup-day" value="saturday" checked>
+                <label for="day-saturday">Saturday</label>
+              </div>
+              <div class="choice">
+                <input type="radio" id="day-sunday" name="pickup-day" value="sunday">
+                <label for="day-sunday">Sunday</label>
+              </div>
+              <div class="choice">
+                <input type="radio" id="day-tuesday" name="pickup-day" value="tuesday">
+                <label for="day-tuesday">Tuesday</label>
+              </div>
+              <div class="choice">
+                <input type="radio" id="day-wednesday" name="pickup-day" value="wednesday">
+                <label for="day-wednesday">Wednesday</label>
+              </div>
+              <div class="choice">
+                <input type="radio" id="day-thursday" name="pickup-day" value="thursday">
+                <label for="day-thursday">Thursday</label>
+              </div>
+              <div class="choice">
+                <input type="radio" id="day-friday" name="pickup-day" value="friday">
+                <label for="day-friday">Friday</label>
+              </div>
+            </div>
+            <div class="field-group" style="margin-top: 1.6rem;">
+              <label for="pickup-time">Pickup time</label>
+              <select id="pickup-time" name="pickup-time" class="field">
+                <option value="08:00">08:00 - 09:00</option>
+                <option value="09:00" selected>09:00 - 10:00</option>
+                <option value="10:00">10:00 - 11:00</option>
+                <option value="11:00">11:00 - 12:00</option>
+                <option value="12:00">12:00 - 13:00</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Your order</legend>
+            <div class="choice-group">
+              <div class="choice">
+                <input type="checkbox" id="prod-sourdough" name="products" value="sourdough">
+                <label for="prod-sourdough">Sourdough loaf</label>
+              </div>
+              <div class="choice">
+                <input type="checkbox" id="prod-baguette" name="products" value="baguette">
+                <label for="prod-baguette">Baguette</label>
+              </div>
+              <div class="choice">
+                <input type="checkbox" id="prod-croissant" name="products" value="croissant">
+                <label for="prod-croissant">Croissant</label>
+              </div>
+              <div class="choice">
+                <input type="checkbox" id="prod-pain-choc" name="products" value="pain-chocolat">
+                <label for="prod-pain-choc">Pain au chocolat</label>
+              </div>
+              <div class="choice">
+                <input type="checkbox" id="prod-brioche" name="products" value="brioche">
+                <label for="prod-brioche">Brioche</label>
+              </div>
+            </div>
+
+            <div class="field-group" style="margin-top: 1.6rem;">
+              <label for="order-notes">Notes for the bakers</label>
+              <textarea id="order-notes" name="notes" class="field" placeholder="Any special requests?"></textarea>
+              <div class="note-hint">e.g., extra flour, sliced, or a birthday message</div>
+            </div>
+          </fieldset>
+
+          <div class="submit-wrap">
+            <button type="submit" class="btn-submit">Pre-order now</button>
+          </div>
+        </form>
       </div>
     </main>
     <footer>
