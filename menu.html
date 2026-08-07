@@ -1,52 +1,91 @@
-<!doctype HTML>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maison Sarah - Menu</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <div class="brand">Maison Sarah</div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#find-us">Find us</a></li>
-          <li><a href="order.html">Order</a></li>
-        </ul>
-      </nav>
+      <div class="container header-bar">
+        <div class="brand">Maison Sarah</div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#find-us">Find us</a></li>
+            <li><a href="order.html">Order</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-      <h1 class="tagline">Our Menu</h1>
-      <ul>
-        <li>
-          Breads
-          <ul>
-            <li>Sourdough Boule: <span class="price">€6.50</span></li>
-            <li>Baguette Tradition: <span class="price">€2.80</span></li>
-          </ul>
-        </li>
-        <li>
-          Pastries
-          <ul>
-            <li>Butter Croissant: <span class="price">€2.40</span></li>
-            <li>Pain au Chocolat: <span class="price">€2.80</span></li>
-          </ul>
-        </li>
-        <li>
-          Viennoiserie
-          <ul>
-            <li>Almond Danish: <span class="price">€3.20</span></li>
-            <li>Raisin Swirl: <span class="price">€3.00</span></li>
-          </ul>
-        </li>
-      </ul>
+      <div class="container">
+        <h1 class="tagline">Our Menu</h1>
+        <ul>
+          <li>
+            Breads
+            <ul>
+              <li>Sourdough Boule: <span class="price">€6.50</span></li>
+              <li>Baguette Tradition: <span class="price">€2.80</span></li>
+            </ul>
+          </li>
+          <li>
+            Pastries
+            <ul>
+              <li>Butter Croissant: <span class="price">€2.40</span></li>
+              <li>Pain au Chocolat: <span class="price">€2.80</span></li>
+            </ul>
+          </li>
+          <li>
+            Viennoiserie
+            <ul>
+              <li>Almond Danish: <span class="price">€3.20</span></li>
+              <li>Raisin Swirl: <span class="price">€3.00</span></li>
+            </ul>
+          </li>
+        </ul>
+        <section id="weekend-specials">
+          <h2>Weekend Specials</h2>
+          <div class="card-row">
+            <article class="card">
+              <img
+                src="images/sourdough.png"
+                alt="A large round sourdough loaf"
+                loading="lazy"
+              />
+              <h3>Weekend Sourdough</h3>
+              <span class="price">€7.50</span>
+            </article>
+            <article class="card">
+              <img
+                src="images/chocolate-croissant.jpg"
+                alt="croissant with dark chocolate"
+                loading="lazy"
+              />
+              <h3>Double Chocolate Croissant</h3>
+              <span class="price">€3.50</span>
+            </article>
+            <article class="card">
+              <img
+                src="images/fruit-tart.jpg"
+                alt="fruit tart topped with fresh strawberries and blueberries."
+                loading="lazy"
+              />
+              <h3>Seasonal Fruit Tart</h3>
+              <span class="price">€4.80</span>
+            </article>
+          </div>
+        </section>
+      </div>
     </main>
     <footer>
       <p>&copy; 2026 Maison Sarah.</p>
