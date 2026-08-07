@@ -180,3 +180,144 @@ span {
 .card img {
   width: 100%;
 }
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #e3d9c9;
+  padding: 0.8rem 1.2rem;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2e9db;
+}
+
+.field {
+  padding: 0.8rem;
+  border: 1px solid #c9bda9;
+  width: 100%;
+  max-width: 40rem;
+  background: #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.field:focus {
+  outline: 3px solid #e9b872;
+  outline-offset: 1px;
+  border-color: #d4a35a;
+}
+
+.field:required {
+  border-left: 4px solid #8a5a2e;
+}
+
+label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  color: #2d241a;
+}
+.choice {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.6rem;
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+}
+
+.choice label {
+  display: inline;
+  font-weight: 400;
+  margin-bottom: 0;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.choice input[type="radio"],
+.choice input[type="checkbox"] {
+  width: 1.8rem;
+  height: 1.8rem;
+  accent-color: #8a5a2e;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.field-group {
+  margin-bottom: 2.4rem;
+}
+
+.field-group legend {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #3a2c1e;
+  margin-bottom: 0.8rem;
+  padding: 0;
+}
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0 0 2.8rem 0;
+}
+.submit-wrap {
+  margin-top: 1.6rem;
+}
+
+.btn-submit {
+  background: #8a5a2e;
+  border: none;
+  padding: 1rem 3.2rem;
+  color: #fff;
+  border-radius: 40px;
+  border: 1px solid #6f4a27;
+}
+
+.btn-submit:hover {
+  background: #704a24;
+}
+
+.btn-submit:focus {
+  outline: 3px solid #e9b872;
+  outline-offset: 2px;
+}
+
+textarea.field {
+  resize: vertical;
+  min-height: 8rem;
+  font-family: "Lato", sans-serif;
+}
+
+select.field {
+  appearance: auto;
+  background: #fff;
+  font-family: "Lato", sans-serif;
+}
+
+.choice-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-top: 0.2rem;
+}
+
+.note-hint {
+  font-size: 1.4rem;
+  color: #5a4d3c;
+  margin-top: -0.2rem;
+  margin-bottom: 0.6rem;
+  font-family: "Lato", sans-serif;
+}
+
+.order-form-container {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 1rem 0 2rem;
+}
